@@ -1,0 +1,41 @@
+.img-center{
+    transform: translate(-50%, -50%);
+}
+.product-item{
+    .product-view{
+        opacity: 0;
+        transition: 0.3s;
+    }
+    &:hover .product-view{
+        opacity: 1;
+        color: white;
+        transition: 0.3s;
+    }
+    .img-overlay{
+       
+        opacity: 0;
+        transition: 0.3s;
+    }
+    &:hover .img-overlay{
+        opacity: 0.8;
+        transition: 0.3s;
+        background-color: bisque;
+    }
+}
+
+.rotate-line{
+    height: 1px;
+    background-color: #000;
+    transform: rotate(5deg);
+
+}
+.center{
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+    }
+}
