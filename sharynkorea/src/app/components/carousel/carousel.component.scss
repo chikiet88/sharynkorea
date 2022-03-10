@@ -1,0 +1,12 @@
+.center{
+    transform: translate(-25%, -50%);
+}
+.carousel-indicators{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+    }
+}

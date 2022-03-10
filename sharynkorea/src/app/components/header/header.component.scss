@@ -1,0 +1,12 @@
+.input-group-text{
+    border: none;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: inherit;
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+    }
+}
