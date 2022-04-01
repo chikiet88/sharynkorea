@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +24,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MdbCarouselModule
+    MdbCarouselModule,
+    CarouselModule 
 
   ],
   providers: [],

@@ -4,6 +4,14 @@
     border-radius: 50%;
     padding: inherit;
 }
+.form-control{
+    padding: inherit;
+    border-radius: 20px;
+}
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 @media screen and (max-width: 768px){
     .wrapper{
         margin: 0 1rem;

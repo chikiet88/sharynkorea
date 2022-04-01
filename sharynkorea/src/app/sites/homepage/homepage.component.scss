@@ -1,41 +1,97 @@
-.img-center{
-    transform: translate(-50%, -50%);
+.img-center {
+  transform: translate(-50%, -50%);
 }
-.product-item{
-    .product-view{
-        opacity: 0;
-        transition: 0.3s;
-    }
-    &:hover .product-view{
-        opacity: 1;
-        color: white;
-        transition: 0.3s;
-    }
-    .img-overlay{
-       
-        opacity: 0;
-        transition: 0.3s;
-    }
-    &:hover .img-overlay{
-        opacity: 0.8;
-        transition: 0.3s;
-        background-color: bisque;
-    }
+.rectangle {
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+}
+.product-item {
+  .product-view {
+    opacity: 0;
+    color: white;
+  }
+  .product-hot {
+    opacity: 0;
+    color: white;
+  }
+  &:hover .product-view  {
+    opacity: 1;
+    color: white;
+    transition: 0.3s;
+  }
+  &:hover .product-hot{
+    opacity: 1;
+    color: white;
+    transition: 0.3s;
+  }
+  .img-overlay {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  &:hover .img-overlay {
+    opacity: 0.8;
+    transition: 0.3s;
+    background-color: rgb(110, 108, 106);
+  }
 }
 
-.rotate-line{
-    height: 1px;
-    background-color: #000;
-    transform: rotate(5deg);
+.rotate-line {
+  height: 1px;
+  background-color: #000;
+  transform: rotate(5deg);
+}
+.center {
+  transform: translateY(-50%);
+}
+.intro {
+  height: 350px;
 
 }
-.center{
-    transform: translateY(-50%);
+.item-product{
+  height: 300px;
+}
+.product-hot{
+  width: 250px;
+}
+.gap-grid{
+  gap: 3rem;
 }
 
-@media screen and (max-width: 768px){
-    .wrapper{
-        margin: 0 1rem;
-        padding: 0.5rem 0;
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    
+  }
+  .intro {
+    height: 450px;
+    width: 100vw;
+  }
+  .item-product{
+    height: 150px;
+  }
+  .product-hot{
+    width: 150px;
+    p{
+      font-size: 10px;
     }
+  }
+  h2{
+    font-size: 14px;
+  }
+  .des{
+    
+    line-height: 1.6rem;
+overflow: hidden;
+display: -webkit-box; 
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+max-height: 3.2rem;
+  }
+  .line{
+    right: -20px;
+  }
+  .gap-grid {
+    gap: 0.5rem;
+  }
+ 
 }
